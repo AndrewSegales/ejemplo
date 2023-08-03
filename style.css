@@ -78,6 +78,20 @@ animation: eyemovement 1s ease-in-out infinite;
     transform: rotate(180deg);
     transform-origin: left 210px; 
 }
+.Luigi {
+    content: " ";
+    position: absolute;
+    color: rgb(72, 28, 3);
+    left: 380px;
+    top: -140px;
+    width: 200px;
+    height: 110px;
+    border-bottom: solid 30px currentColor;
+    border-radius: 0 0 110% 20%;
+    transform: rotate(-180deg);
+    transform-origin: left 210px;
+    
+}
 @keyframes eyemovement {
     0%{
         top: 300px;
