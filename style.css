@@ -1,0 +1,91 @@
+body{
+    background-image: url(img.jpg/fondo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.mustache {
+    width: 100px;
+    height: 160px;
+    border-radius: 60%;
+    color: rgba(0, 0, 0, 0.958);
+    box-shadow: 280px 220px 0 0 currentColor,
+                400px 220px 0 0 currentColor;
+}
+.mustache::before {
+content: "";
+position: absolute;
+color: rgb(72, 28, 3);
+left: 180px;
+top: 350px;
+width: 210px;
+height: 140px;
+border-bottom: solid 130px currentColor;
+border-radius: 0 0 20% 100%;
+transform: rotate(-0deg);
+transform-origin: right 210px;
+animation: eyemovement 1s ease-in-out infinite;
+}
+.mustache::after {
+    content: " ";
+    position: absolute;
+    color: rgb(72, 28, 3);
+    left: 410px;
+    top: 340px;
+    width: 200px;
+    height: 140px;
+    border-bottom: solid 130px currentColor;
+    border-radius: 0 0 110% 20%;
+    transform: rotate(0deg);
+    transform-origin: left 210px;
+    animation: eyemovement 1s ease-in-out infinite;
+}
+.nose {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 60%;
+    color: rgba(238, 148, 95, 0.953);
+    box-shadow: 30git 0px 160px 0 0 currentColor;
+}
+
+.mario {
+    content: " ";
+    position: absolute;
+    color: rgb(72, 28, 3);
+    left: 380px;
+    top: -140px;
+    width: 200px;
+    height: 110px;
+    border-bottom: solid 30px currentColor;
+    border-radius: 0 0 110% 20%;
+    transform: rotate(-180deg);
+    transform-origin: left 210px;
+    
+}
+.gorras {
+    content: " ";
+    position: absolute;
+    color: rgb(72, 28, 3);
+    left: 620px;
+    top: -140px;
+    width: 200px;
+    height: 110px;
+    border-bottom: solid 30px currentColor;
+    border-radius: 0 0 20% 120%;
+    transform: rotate(180deg);
+    transform-origin: left 210px; 
+}
+@keyframes eyemovement {
+    0%{
+        top: 300px;
+    }
+    50%{
+        top: 290px;
+    }
+    100%{
+        top: 300px;
+    }
+}
